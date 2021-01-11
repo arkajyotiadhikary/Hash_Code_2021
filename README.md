@@ -1,7 +1,8 @@
 # Hash_Code_2021
 
-Hash code Question points.
+<h1>Hash code Question points.</h1>
 
+<p>
 1. deliver as many different ingredients as we can.
 2. already have some prepared pizzas.
 3 . each pizza can be delivered to at most one team.
@@ -12,3 +13,4 @@ Hash code Question points.
 8 . decide which pizza to send each of the team.
 9. maximize the number of different ingredients used in all their pizzas. (per team).
 10. it is allowed to make fewer deliveries than the number of teams.
+</p>
