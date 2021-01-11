@@ -4,16 +4,20 @@ class tokenizer:
     three_teamNo : int
     four_teamNo : int
 
-    list_of_dishes : list
+    list_of_dishes = []
 
     def __init__(self,filePath):
         inputFile = open(filePath,"r")
-        varialbes = inputFile.readlines()[0].split(' ')
+        lines = inputFile.readlines()  #fixing line
+        varialbes = lines[0].split(' ')
         self.dish_varity = int(varialbes[0])
         self.two_teamNo = int(varialbes[1])
         self.three_teamNo = int(varialbes[2])
         self.four_teamNo = int(varialbes[3])
-        self.list_of_dishes = inputFile.readlines()
+
+        for i in range(0,self.dish_varity):
+            self.list_of_dishes.append(lines[i+1])
+
 
     def display(self):
         print('varity of dishes '+ str(self.dish_varity))
@@ -21,9 +25,10 @@ class tokenizer:
         print('no of three member team ' + str(self.three_teamNo))
         print('no of four member team ' + str(self.four_teamNo))
 
-        print("dishes are ",)
+        print("dishes are ")
         for i in self.list_of_dishes:
-            print(i)
+            print(str(i)[1:])
+        
 
 read_file = tokenizer('Inputs/a_example.txt')
 read_file.display()
