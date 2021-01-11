@@ -1,4 +1,4 @@
-class tokenizer:
+class Tokenizer:
     dish_varity: int
     two_teamNo : int
     three_teamNo : int
@@ -16,7 +16,7 @@ class tokenizer:
         self.four_teamNo = int(varialbes[3])
 
         for i in range(0,self.dish_varity):
-            self.list_of_dishes.append(lines[i+1])
+            self.list_of_dishes.append(lines[i+1][2:-1].split(' '))
 
 
     def display(self):
@@ -29,7 +29,3 @@ class tokenizer:
         for i in self.list_of_dishes:
             print(str(i)[1:])
         
-
-read_file = tokenizer('Inputs/a_example.txt')
-read_file.display()
-
