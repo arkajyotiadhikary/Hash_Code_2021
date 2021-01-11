@@ -1,6 +1,6 @@
 # Hash_Code_2021
 
-<h1>Hash code Question points.</h1>
+<h2>Hash code Question points.</h2>
 
 <ol>
   <li>deliver as many different ingredients as we can.</li>
