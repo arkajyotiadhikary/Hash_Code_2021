@@ -8,7 +8,9 @@ class Tokenizer:
 
     def __init__(self,filePath):
         inputFile = open(filePath,"r")
+
         lines = inputFile.readlines()  #fixing line
+     
         varialbes = lines[0].split(' ')
         self.dish_varity = int(varialbes[0])
         self.two_teamNo = int(varialbes[1])
