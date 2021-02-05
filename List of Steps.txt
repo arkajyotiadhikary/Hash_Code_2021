@@ -1,0 +1,7 @@
+This is regardless of language (Python/C/C++)
+Must include the workflow like: we shall do this and do that etc (not that we have to use functions to this or that) General language
+Give * for nos of time the step is recorrected.
+
+Step1: read the input file (*)
+
+Step2:
